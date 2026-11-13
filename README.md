@@ -1,30 +1,27 @@
-# Getting Started with Create React App
+# mitchellhayes personal website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Single-page portfolio built with React (Create React App).
 
-## Available Scripts
+## Adding or updating a project
 
-In the project directory, you can run:
+All projects live in [`src/data/projects.js`](src/data/projects.js). The Projects
+section renders straight from that array, so adding a project is:
 
-### `npm start`
+1. Drop a teaser image into `public/assets/media/` (16:10, roughly 1280x800,
+   WebP or PNG, ideally under 150 KB). For a two-screen project add a second
+   phone-shaped image (about 480x960).
+2. Append an object to the array with `title`, `blurb`, `tags`, `live`, `code`
+   and `images`. Set `live` or `code` to `null` when there is no public link;
+   the tile then shows `note` instead of buttons.
+3. Commit.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The field reference is in the comment at the top of that file.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Scripts
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm ci          # install
+npm start       # dev server on http://localhost:3000
+npm test        # run the test suite once with CI=true, or in watch mode without it
+npm run build   # production build to ./build
+```

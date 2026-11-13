@@ -1,17 +1,20 @@
 import React from 'react';
+import { GitHubIcon, XIcon } from './Icons';
 
-const ContactSection: React.FC = () => {
+const ContactSection = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-section-header">
         <h2>Find Me Online</h2>
       </div>
       <div className="contact-links">
-        <a id="profile-link" href="https://github.com/MitchellHayes" target="_blank" rel="noreferrer" className="btn contact-details">
-          <i className="fab fa-github"></i>GitHub
+        <a href="https://github.com/MitchellHayes" target="_blank" rel="noreferrer" className="btn contact-details">
+          <GitHubIcon size={26} />
+          <span>GitHub</span>
         </a>
-        <a id="profile-link" href="https://twitter.com/MLHayes95" target="_blank" rel="noreferrer" className="btn contact-details">
-          <i className="fab fa-twitter"></i>Twitter
+        <a href="https://x.com/MLHayes95" target="_blank" rel="noreferrer" className="btn contact-details">
+          <XIcon size={24} />
+          <span>X</span>
         </a>
       </div>
     </section>
