@@ -37,6 +37,16 @@ const ProjectMedia = ({ project }) => {
     );
   }
 
+  if (phone && phone === images[0] && images.length === 1) {
+    return (
+      <div className="project-media project-media--phone-only">
+        <div className="device device--phone-solo">
+          <TeaserImage src={phone.src} alt={phone.alt} fallback={title.charAt(0)} />
+        </div>
+      </div>
+    );
+  }
+
   if (phone) {
     return (
       <div className="project-media project-media--composite">

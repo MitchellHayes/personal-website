@@ -42,10 +42,10 @@ const projects = [
   {
     id: 'the-outpost',
     title: 'The Outpost',
-    // TODO: replace blurb and live URL with the real ones.
+    // TODO: confirm blurb.
     blurb: 'Website for The Outpost, the Minecraft survival server I run, with server info, modpack downloads and season history.',
     tags: ['React', 'Minecraft', 'Community'],
-    live: 'https://example.com/the-outpost', // TODO
+    live: 'https://theoutpostsmp.com/',
     code: null,
     note: null,
     images: [{ src: media('the-outpost.webp'), alt: 'Home page of The Outpost website' }],
@@ -54,10 +54,10 @@ const projects = [
   {
     id: 'no-refunds',
     title: 'No Refunds',
-    // TODO: replace blurb and live URL with the real ones.
+    // TODO: confirm blurb.
     blurb: 'A browser game built in TypeScript.',
-    tags: ['TypeScript', 'Game'],
-    live: 'https://example.com/no-refunds', // TODO
+    tags: ['TypeScript', 'Game', 'Self-hosted'],
+    live: 'https://norefunds.hayeshomelab.com/',
     code: null,
     note: null,
     images: [{ src: media('no-refunds.webp'), alt: 'No Refunds gameplay' }],
@@ -66,13 +66,14 @@ const projects = [
   {
     id: 'pin-jam',
     title: 'Pin Jam',
-    // TODO: replace blurb and live URL with the real ones.
-    blurb: 'A pin-pulling puzzle game built in TypeScript.',
-    tags: ['TypeScript', 'Puzzle'],
-    live: 'https://example.com/pin-jam', // TODO
+    // TODO: confirm blurb.
+    blurb: 'A pin-pulling puzzle game built in TypeScript, designed for phones first.',
+    tags: ['TypeScript', 'Puzzle', 'Mobile', 'Self-hosted'],
+    live: 'http://pinjam.hayeshomelab.com/',
     code: null,
     note: null,
-    images: [{ src: media('pin-jam.webp'), alt: 'Pin Jam puzzle in progress' }],
+    // Mobile-first, so the teaser is a single phone screenshot (about 480x960).
+    images: [{ src: media('pin-jam-phone.webp'), alt: 'Pin Jam puzzle in progress on a phone', kind: 'phone' }],
     year: 2026,
   },
   {
@@ -96,7 +97,7 @@ const projects = [
     blurb:
       'A tree identification key built with my brother, a forestry student, to make dendrology approachable one tap at a time.',
     tags: ['React', 'Education'],
-    live: 'https://example.com/tree-id', // TODO
+    live: 'https://treeid.hayeshomelab.com/',
     code: 'https://github.com/MitchellHayes/tree-id',
     note: null,
     images: [{ src: media('tree-id.webp'), alt: 'Tree ID identification key' }],
