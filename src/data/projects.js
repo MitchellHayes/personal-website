@@ -42,38 +42,37 @@ const projects = [
   {
     id: 'the-outpost',
     title: 'The Outpost',
-    // TODO: confirm blurb.
-    blurb: 'Website for The Outpost, the Minecraft survival server I run, with server info, modpack downloads and season history.',
+    blurb:
+      'Home of The Outpost, a homestead-style Minecraft SMP I run. Live player count, Discord status, gallery, news, rules and a Bluemap of the world.',
     tags: ['React', 'Minecraft', 'Community'],
     live: 'https://theoutpostsmp.com/',
     code: null,
     note: null,
-    images: [{ src: media('the-outpost.webp'), alt: 'Home page of The Outpost website' }],
+    images: [{ src: media('the-outpost.webp'), alt: 'The Outpost home page with a screenshot of a Minecraft build and a Join button' }],
     year: 2026,
   },
   {
     id: 'no-refunds',
     title: 'No Refunds',
-    // TODO: confirm blurb.
-    blurb: 'A browser game built in TypeScript.',
-    tags: ['TypeScript', 'Game', 'Self-hosted'],
+    blurb:
+      'A pixel-art shopkeeping roguelike. Run an adventuring-supplies store, pay off the lich in 30 days, and unlock new backgrounds with each run.',
+    tags: ['TypeScript', 'Roguelike', 'Self-hosted'],
     live: 'https://norefunds.hayeshomelab.com/',
     code: null,
     note: null,
-    images: [{ src: media('no-refunds.webp'), alt: 'No Refunds gameplay' }],
+    images: [{ src: media('no-refunds.webp'), alt: 'No Refunds title screen with the shop sign and character selection' }],
     year: 2026,
   },
   {
     id: 'pin-jam',
     title: 'Pin Jam',
-    // TODO: confirm blurb.
-    blurb: 'A pin-pulling puzzle game built in TypeScript, designed for phones first.',
+    blurb: 'Unscrew the pins, sort the colours, watch the swing. A mobile-first puzzle game with a growing set of levels.',
     tags: ['TypeScript', 'Puzzle', 'Mobile', 'Self-hosted'],
     live: 'https://pinjam.hayeshomelab.com/',
     code: null,
     note: null,
     // Mobile-first, so the teaser is a single phone screenshot (about 480x960).
-    images: [{ src: media('pin-jam-phone.webp'), alt: 'Pin Jam puzzle in progress on a phone', kind: 'phone' }],
+    images: [{ src: media('pin-jam-phone.webp'), alt: 'Pin Jam Puzzle start screen with the level grid on a phone', kind: 'phone' }],
     year: 2026,
   },
   {
@@ -100,7 +99,7 @@ const projects = [
     live: 'https://treeid.hayeshomelab.com/',
     code: 'https://github.com/MitchellHayes/tree-id',
     note: null,
-    images: [{ src: media('tree-id.webp'), alt: 'Tree ID identification key' }],
+    images: [{ src: media('tree-id.webp'), alt: 'Tree ID list of identifiable trees with photos and Latin names' }],
     year: 2023,
   },
   {
