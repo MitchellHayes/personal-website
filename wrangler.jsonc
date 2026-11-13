@@ -1,0 +1,13 @@
+// Cloudflare Workers config: serves the Create React App build as static assets.
+// Docs: https://developers.cloudflare.com/workers/static-assets/
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "personal-website",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./build",
+    // Serve index.html for any path that doesn't match a file, so client-side
+    // routing keeps working if it is added later.
+    "not_found_handling": "single-page-application"
+  }
+}
