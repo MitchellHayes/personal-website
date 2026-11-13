@@ -69,7 +69,7 @@ const projects = [
     // TODO: confirm blurb.
     blurb: 'A pin-pulling puzzle game built in TypeScript, designed for phones first.',
     tags: ['TypeScript', 'Puzzle', 'Mobile', 'Self-hosted'],
-    live: 'http://pinjam.hayeshomelab.com/',
+    live: 'https://pinjam.hayeshomelab.com/',
     code: null,
     note: null,
     // Mobile-first, so the teaser is a single phone screenshot (about 480x960).
